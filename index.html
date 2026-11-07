@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Gift Collection — Personalized Gifts, Made From Your Photos</title>
+<meta name="description" content="Five personalized digital gifts for Black Friday: a Christmas storybook starring your child, trend photo combos, paper-cutout walking animations, and a 20-style HTML slide template pack. Digital delivery, secure Gumroad checkout.">
+<style>
+  :root{
+    --bg:#0d0b09;
+    --bg2:#171310;
+    --card:#1c1712;
+    --line:#3a2f22;
+    --ink:#f3ead9;
+    --muted:#b8a88f;
+    --gold:#e8b64c;
+    --gold2:#c9962e;
+    --red:#d8402e;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* ---------- header ---------- */
+  header{
+    background:
+      radial-gradient(900px 420px at 50% -120px, rgba(232,182,76,.20), transparent 60%),
+      linear-gradient(180deg,#14100c, var(--bg));
+    border-bottom:1px solid var(--line);
+    text-align:center;
+    padding:64px 0 48px;
+  }
+  .kicker{
+    display:inline-block;
+    font-family:Verdana,Geneva,sans-serif;
+    font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+    color:#0d0b09;background:var(--gold);
+    padding:6px 14px;border-radius:999px;font-weight:bold;
+  }
+  h1{
+    font-size:clamp(38px,6vw,62px);
+    line-height:1.08;
+    margin:22px 0 14px;
+    font-weight:normal;
+  }
+  h1 .gold{color:var(--gold)}
+  .sub{
+    max-width:640px;margin:0 auto;color:var(--muted);
+    font-size:clamp(16px,2.4vw,19px);
+  }
+  .sub strong{color:var(--ink);font-weight:normal;border-bottom:2px solid var(--red)}
+  .badges{
+    margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+    font-family:Verdana,Geneva,sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  }
+  .badges span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--bg2)}
+
+  /* ---------- grid / cards ---------- */
+  main{padding:52px 0 12px}
+  .grid{
+    display:grid;gap:22px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:transform .18s ease, border-color .18s ease;
+  }
+  .card:hover{transform:translateY(-3px);border-color:var(--gold2)}
+  .card .art{height:190px;background:#241c14;position:relative;overflow:hidden}
+  .card .art img{width:100%;height:100%;object-fit:cover;display:block}
+  .card .art .tag{
+    position:absolute;top:12px;left:12px;
+    font-family:Verdana,Geneva,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    background:rgba(13,11,9,.82);color:var(--gold);
+    border:1px solid var(--gold2);border-radius:999px;padding:4px 10px;
+  }
+  /* CSS-only art for cards without photography */
+  .art-duo{
+    background:
+      radial-gradient(220px 150px at 22% 60%, rgba(216,64,46,.55), transparent 65%),
+      radial-gradient(220px 150px at 78% 60%, rgba(64,140,90,.5), transparent 65%),
+      linear-gradient(160deg,#2a2016,#171310);
+    display:flex;align-items:center;justify-content:center;font-size:64px;
+  }
+  .art-slides{
+    background:
+      repeating-linear-gradient(0deg, transparent 0 26px, rgba(232,182,76,.10) 26px 27px),
+      linear-gradient(150deg,#241a10,#14100c);
+    display:flex;align-items:center;justify-content:center;gap:8px;padding:0 26px;
+  }
+  .art-slides i{
+    display:block;width:64px;height:44px;border:1.5px solid var(--gold2);border-radius:5px;
+    background:rgba(232,182,76,.08);
+  }
+  .art-slides i:nth-child(2){transform:translateY(12px) rotate(-3deg)}
+  .art-slides i:nth-child(3){transform:translateY(-6px) rotate(2deg)}
+  .body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+  .body h2{font-size:21px;line-height:1.25;font-weight:normal}
+  .body .cat{
+    font-family:Verdana,Geneva,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--red);margin-bottom:8px;
+  }
+  .body p{color:var(--muted);font-size:15px;margin-top:10px;flex:1}
+  .price{
+    margin-top:16px;font-size:24px;color:var(--gold);
+  }
+  .price small{font-size:13px;color:var(--muted)}
+  .price .was{color:#8a7a5f;text-decoration:line-through;font-size:16px;margin-right:8px}
+  .btn{
+    margin-top:14px;display:block;text-align:center;text-decoration:none;
+    background:linear-gradient(180deg,var(--gold),var(--gold2));
+    color:#171106;font-family:Verdana,Geneva,sans-serif;font-weight:bold;
+    font-size:14px;letter-spacing:.06em;
+    padding:13px 16px;border-radius:10px;
+  }
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{
+    background:transparent;color:var(--gold);border:1px solid var(--gold2);
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:52px;border-top:1px solid var(--line);
+    background:var(--bg2);
+    padding:38px 0 46px;text-align:center;color:var(--muted);font-size:14.5px;
+  }
+  footer .row{max-width:680px;margin:0 auto}
+  footer strong{color:var(--ink);font-weight:normal}
+  footer .fine{margin-top:14px;font-size:12.5px;color:#8a7a5f}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="kicker">Black Friday · Limited Season</span>
+    <h1>Black Friday <span class="gold">Gift Collection</span></h1>
+    <p class="sub">Five gifts that start with <strong>your own photos</strong> — a storybook starring your child, the two of you in one holiday photo, paper-cutout films of you walking through paper cities, plus a 20-style slide template pack for the practical person on your list. Made to order, delivered digitally.</p>
+    <div class="badges">
+      <span>Digital delivery</span>
+      <span>No shipping deadlines</span>
+      <span>Secure Gumroad checkout</span>
+      <span>Made to order</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- 1. Storybook -->
+      <article class="card">
+        <div class="art">
+          <img src="https://api.newkwlab.com/book/media/sample-page-0.jpg" alt="Sample page of the personalized Christmas storybook" loading="lazy">
+          <span class="tag">For kids</span>
+        </div>
+        <div class="body">
+          <div class="cat">Personalized Storybook</div>
+          <h2>Personalized Christmas Storybook — Your Child as the Hero</h2>
+          <p>Send one photo of your child and they become the hero of their own Christmas storybook — their face painted through every page, delivered as a print-ready PDF plus a read-aloud MP3, within 48 hours.</p>
+          <div class="price">$19.99</div>
+          <a class="btn" href="https://api.newkwlab.com/book/">Order</a>
+        </div>
+      </article>
+
+      <!-- 2. SnapDuo -->
+      <article class="card">
+        <div class="art art-duo" aria-hidden="true">🎄📸
+          <span class="tag">Photo combo</span>
+        </div>
+        <div class="body">
+          <div class="cat">Trend Photo Combo</div>
+          <h2>SnapDuo — Trend Photo Combos, HD Unlock Pack</h2>
+          <p>Two separate photos in, one photo of you together out — Christmas couple styles and the latest trend looks. Try it free with a watermarked preview, then unlock 3 HD photos with no watermark.</p>
+          <div class="price">$9.99 <small>HD unlock pack · free preview</small></div>
+          <a class="btn" href="https://api.newkwlab.com/duo/">Try it</a>
+        </div>
+      </article>
+
+      <!-- 3. PaperStage Christmas -->
+      <article class="card">
+        <div class="art">
+          <img src="https://api.newkwlab.com/clip/media/scenes/christmas-market.jpg" alt="PaperStage Christmas market paper-cutout scene" loading="lazy">
+          <span class="tag">Paper animation</span>
+        </div>
+        <div class="body">
+          <div class="cat">Paper-Cutout Animation</div>
+          <h2>PaperStage — Personalized Christmas Paper-Cutout Animation</h2>
+          <p>Your photo becomes a paper cutout of you, walking through a snowy paper Christmas city — a hand-built 8–10 second vertical film with music and falling snow. Solo or Duo.</p>
+          <div class="price">$12.99 <small>Solo</small> · $19.99 <small>Duo</small></div>
+          <a class="btn" href="https://api.newkwlab.com/clip/">Order</a>
+        </div>
+      </article>
+
+      <!-- 4. Fashion Citywalk -->
+      <article class="card">
+        <div class="art">
+          <img src="https://api.newkwlab.com/walk/media/fashion-citywalk-poster.jpg" alt="Fashion Citywalk paper-cutout poster" loading="lazy">
+          <span class="tag">6 templates</span>
+        </div>
+        <div class="body">
+          <div class="cat">Paper-Cutout Animation</div>
+          <h2>Fashion Citywalk — Paper-Cutout Animation, 6 Templates</h2>
+          <p>One photo of you, striding through a hand-built paper street scene — six looks to pick from, from a Tokyo scramble crossing to a Hong Kong market. A 10-second vertical film, made for Instagram and TikTok.</p>
+          <div class="price">$12.99</div>
+          <a class="btn" href="https://api.newkwlab.com/walk/">Order</a>
+        </div>
+      </article>
+
+      <!-- 5. HTML Slide Template Pack -->
+      <article class="card">
+        <div class="art art-slides" aria-hidden="true"><i></i><i></i><i></i>
+          <span class="tag">Black Friday price</span>
+        </div>
+        <div class="body">
+          <div class="cat">Presentation Templates</div>
+          <h2>HTML Slide Template Pack — 20 Presentation Styles</h2>
+          <p>20 ready-made HTML presentation styles, 10 slide types each, in English and Chinese editions. Open in any browser and present — these are HTML templates, not PowerPoint files.</p>
+          <div class="price"><span class="was"></span>$39 <small>Black Friday price</small></div>
+          <a class="btn" href="https://binbinster.gumroad.com/l/html-slide-templates">Buy</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <p><strong>Everything here is a digital product</strong> — nothing ships, nothing gets stuck in the mail. Personalized items are made to order and delivered by email/download, most within 48 hours.</p>
+      <p class="fine">All payments are processed through secure Gumroad checkout. Please order only through the buttons and links on this page.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
