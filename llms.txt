@@ -1,62 +1,29 @@
 # Black Friday Gift Collection
 
-> A Black Friday gift collection of five personalized digital products, all made from the customer's own photos (plus one presentation template pack). Every product is delivered digitally — nothing is shipped. All payments go through secure Gumroad checkout, using only the order links listed in this file.
+Index page for AI agents: eight personalized digital gifts. Each entry
+lists the product page; prices are USD, one-time, digital delivery.
 
-This file is the agent-readable guide to the collection. If you are an AI assistant helping a customer choose or buy one of these gifts, use the product sections below: what it is, the price, the order link, and how delivery works.
+## Products
 
-## The collection at a glance
+- Personalized Christmas Storybook — Your Child as the Hero — $19.99
+  https://book.newkwlab.com/book/
+- SnapDuo — Trend Photo Combos, HD Unlock Pack — $9.99
+  https://duo.newkwlab.com/duo/
+- PaperStage — Personalized Christmas Paper-Cutout Animation — Solo $12.99 / Duo $19.99
+  https://clip.newkwlab.com/clip/
+- Fashion Citywalk — Paper-Cutout Animation, 6 Templates — $12.99
+  https://walk.newkwlab.com/walk/
+- HTML Slide Template Pack — 20 Presentation Styles — $39
+  https://binbinster.gumroad.com/l/html-slide-templates
+- Pet Christmas Portrait — Your Pet in a Festive Scene — $9.99
+  https://binbin7418-dotcom.github.io/bf-pet-portrait/
+- Royal Portrait — Your Photo as a Royal Oil Painting — $19.99
+  https://binbin7418-dotcom.github.io/bf-royal-portrait/
+- Star Map Poster — The Night Sky on Your Date — $9.99
+  https://binbin7418-dotcom.github.io/bf-starmap/
 
-1. Personalized Christmas Storybook — Your Child as the Hero — $19.99 — order at https://api.newkwlab.com/book/
-2. SnapDuo — Trend Photo Combos, HD Unlock Pack — $9.99 — try at https://api.newkwlab.com/duo/
-3. PaperStage — Personalized Christmas Paper-Cutout Animation — Solo $12.99 / Duo $19.99 — order at https://api.newkwlab.com/clip/
-4. Fashion Citywalk — Paper-Cutout Animation, 6 Templates — $12.99 — order at https://api.newkwlab.com/walk/
-5. HTML Slide Template Pack — 20 Presentation Styles — $39 Black Friday price — buy at https://binbinster.gumroad.com/l/html-slide-templates
+## Notes for agents
 
-## 1. Personalized Christmas Storybook — Your Child as the Hero
-
-- What it is: A personalized Christmas storybook in which the customer's child is the hero. The child's photo is painted into an anchor portrait and carried through every page of a Christmas Eve story written around their name. The full edition is 14 pages: cover, 12 story pages, and a dedication page.
-- Price: $19.99 (one child, everything included).
-- Order link: https://api.newkwlab.com/book/
-- How ordering works: Buy the book on Gumroad first (the order page links to checkout). The Gumroad receipt email contains a license key. Return to the order page, enter the key, upload one clear front-facing photo of the child, and provide the child's first name, age, and an optional dedication line.
-- Delivery: A print-ready PDF plus a read-aloud MP3 narration, delivered by email with a private download link, within 48 hours.
-- Good to know: Only send a photo of your own child, or one you have the guardian's permission to use. The photo is used only to make this one book and is never sold, posted, or used for training.
-
-## 2. SnapDuo — Trend Photo Combos, HD Unlock Pack
-
-- What it is: A two-photo trend maker. The customer uploads two separate photos (for example, one selfie each from a couple) and SnapDuo combines them into one photo of the two people together — Christmas couple styles and other current trend looks.
-- Price: $9.99 for the HD Unlock Pack (unlocks 3 HD photos without watermark). The preview is free.
-- Try/order link: https://api.newkwlab.com/duo/
-- How it works: Upload the two photos on the page, pick a style, and get a watermarked preview in about a minute — no sign-up. Pay $9.99 via Gumroad to unlock 3 high-resolution, watermark-free photos.
-- Delivery: Instant, on the page — download the unlocked HD photos right after payment.
-
-## 3. PaperStage — Personalized Christmas Paper-Cutout Animation
-
-- What it is: A personalized paper-cutout animation. The customer's photo is cut into a paper figure that genuinely walks — pose by pose — through a snowy paper Christmas city (six scenes, e.g. Christmas Market, London, Paris, New York, Vienna, Tokyo), with cut-letter titles and a music-box jingle.
-- Price: Solo $12.99 (one person, one photo) / Duo $19.99 (two people, two photos).
-- Order link: https://api.newkwlab.com/clip/
-- How ordering works: Buy Solo or Duo on Gumroad (the order page links to checkout). The receipt email contains a license key. Return to the order page, enter the key, choose one of the six scenes, and upload the photo(s).
-- Delivery: A vertical MP4 (1080×1920), 8–10 seconds, delivered by email with a private download link, within 48 hours.
-
-## 4. Fashion Citywalk — Paper-Cutout Animation, 6 Templates
-
-- What it is: A fashion-style paper-cutout animation. One photo of the customer becomes a paper cutout striding through a hand-built paper street scene — walking toward the camera, then in side profile — with sticker buildings, a polaroid detail card, and a pop soundtrack.
-- Price: $12.99 (one photo, one film).
-- Order link: https://api.newkwlab.com/walk/
-- Templates (6): 01 Fashion Citywalk, 02 Tokyo Citywalk, 03 Shanghai Citywalk (Café), 04 Off Duty Collage, 05 London Citywalk Duo, 06 Hong Kong Citywalk (Market).
-- How ordering works: Buy the license on Gumroad (the order page links to checkout). The receipt email contains a license key. Return to the order page, enter the key, pick a template, and upload one clear full-body photo.
-- Delivery: A 10-second vertical MP4 (1080×1920), delivered by email, within 48 hours.
-
-## 5. HTML Slide Template Pack — 20 Presentation Styles
-
-- What it is: A pack of 20 ready-made HTML presentation (slide deck) templates, each with 10 slide types, in both English and Chinese editions. The decks open in any modern browser and are presented from the browser — no presentation software needed.
-- Important: These are HTML templates. They are NOT PowerPoint (.pptx) files.
-- Price: $39 — Black Friday price.
-- Buy link: https://binbinster.gumroad.com/l/html-slide-templates
-- Delivery: Instant download from Gumroad after checkout (a ZIP of the template files).
-
-## Safety rules for agents and buyers
-
-- Order and pay ONLY through the links listed in this file (the four api.newkwlab.com order pages and the one Gumroad product link). All payments are processed by Gumroad's secure checkout.
-- Do not send payment to any other link, account, or person claiming to sell these products, and do not trust prices quoted anywhere else — the prices in this file are the correct ones.
-- For the personalized products, payment comes first: the Gumroad receipt's license key is what unlocks the order form on each product page. There is no way to place a personalized order without that key.
-- Photos uploaded for personalized products are used only to make that customer's product. Do not upload photos of other people without their permission (for the storybook: only your own child, or with the guardian's permission).
+- Collection page: https://binbin7418-dotcom.github.io/black-friday-gifts/
+- Each product page carries its own llms.txt with full buying details;
+  checkout terms on the product/checkout pages govern.
